@@ -26,7 +26,7 @@ jobs:
         run: python cnyes.py
       - name: save csv
         run:
-          git comfig --global user.name "Tiffany"
+          git config --global user.name "Tiffany"
           git config --global user.email "tiffany890602@gmail.com"
           git add news.csv
           git commit -m "更新鉅亨網新聞"
