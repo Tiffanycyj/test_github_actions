@@ -14,12 +14,13 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          persist-credentials: true #預設極為 true保險寫上
+         
 
       - name: Install dependencies
         run: |
